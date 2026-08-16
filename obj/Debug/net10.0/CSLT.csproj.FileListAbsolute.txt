@@ -1,0 +1,14 @@
+C:\Users\Dell\CSLT\bin\Debug\net10.0\CSLT.exe
+C:\Users\Dell\CSLT\bin\Debug\net10.0\CSLT.deps.json
+C:\Users\Dell\CSLT\bin\Debug\net10.0\CSLT.runtimeconfig.json
+C:\Users\Dell\CSLT\bin\Debug\net10.0\CSLT.dll
+C:\Users\Dell\CSLT\bin\Debug\net10.0\CSLT.pdb
+C:\Users\Dell\CSLT\obj\Debug\net10.0\CSLT.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Dell\CSLT\obj\Debug\net10.0\CSLT.AssemblyInfoInputs.cache
+C:\Users\Dell\CSLT\obj\Debug\net10.0\CSLT.AssemblyInfo.cs
+C:\Users\Dell\CSLT\obj\Debug\net10.0\CSLT.csproj.CoreCompileInputs.cache
+C:\Users\Dell\CSLT\obj\Debug\net10.0\CSLT.dll
+C:\Users\Dell\CSLT\obj\Debug\net10.0\refint\CSLT.dll
+C:\Users\Dell\CSLT\obj\Debug\net10.0\CSLT.pdb
+C:\Users\Dell\CSLT\obj\Debug\net10.0\CSLT.genruntimeconfig.cache
+C:\Users\Dell\CSLT\obj\Debug\net10.0\ref\CSLT.dll
