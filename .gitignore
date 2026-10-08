@@ -1,7 +1,9 @@
-﻿################################################################################
-# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
-################################################################################
+﻿# Chặn thư mục .vs ở mọi cấp thư mục
+**/.vs/
+.vs/
 
-/.vs
+# Chặn thư mục build bin và obj ở mọi cấp thư mục
+**/bin/
+**/obj/
 bin/
 obj/
