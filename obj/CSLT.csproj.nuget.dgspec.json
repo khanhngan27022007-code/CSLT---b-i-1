@@ -1,25 +1,27 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Dell\\CSLT\\CSLT.csproj": {}
+    "C:\\Users\\Dell\\source\\repos\\WOO\\CSLT.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Dell\\CSLT\\CSLT.csproj": {
+    "C:\\Users\\Dell\\source\\repos\\WOO\\CSLT.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Dell\\CSLT\\CSLT.csproj",
+        "projectUniqueName": "C:\\Users\\Dell\\source\\repos\\WOO\\CSLT.csproj",
         "projectName": "CSLT",
-        "projectPath": "C:\\Users\\Dell\\CSLT\\CSLT.csproj",
+        "projectPath": "C:\\Users\\Dell\\source\\repos\\WOO\\CSLT.csproj",
         "packagesPath": "C:\\Users\\Dell\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Dell\\CSLT\\obj\\",
+        "outputPath": "C:\\Users\\Dell\\source\\repos\\WOO\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Dell\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\Dell\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net10.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -61,7 +63,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.400/PortableRuntimeIdentifierGraph.json",
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.401/PortableRuntimeIdentifierGraph.json",
           "packagesToPrune": {
             "Microsoft.CSharp": "(,4.7.32767]",
             "Microsoft.VisualBasic": "(,10.4.32767]",
