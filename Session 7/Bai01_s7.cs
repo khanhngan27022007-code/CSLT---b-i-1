@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.VisualBasic;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
@@ -109,7 +110,72 @@ namespace CSLT.Session_7
             Console.WriteLine($"Chu cai: {alphabet} | Chu so: {digit} | Ky tu dac biet: {specialChar}");
 
             //đếm nguyên âm, phụ âm
-            int vowel = 0, consonant = 0;
+            int vowels = 0, consonants = 0;
+            foreach (char c in str)
+            {
+                char lower = (c >= 'A' && c <= 'Z') ? (char)(c + 32) : c;
+                if (lower >= 'a' && lower <= 'z')
+                {
+                    if (lower == 'a' || lower == 'e' || lower == 'i' || lower == 'o' || lower == 'u')
+                        vowels++;
+                    else
+                        consonants++;
+                }
+            }
+            Console.WriteLine($"8. Nguyên âm: {vowels} | Phụ âm: {consonants}\n");
+
+            // --- 9, 10, 12. Tìm chuỗi con (Kiểm tra tồn tại, Vị trí & Số lần xuất hiện) ---
+            int subLen = 0;
+            string sub = "Map";
+            foreach (char c in sub) subLen++;
+
+            int firstPos = -1;
+            int countSub = 0;
+
+            for (int i = 0; i <= length - subLen; i++)
+            {
+                bool match = true;
+                for (int j = 0; j < subLen; j++)
+                {
+                    if (str[i + j] != sub[j])
+                    {
+                        match = false;
+                        break;
+                    }
+                }
+                if (match)
+                {
+                    if (firstPos == -1) firstPos = i;
+                    countSub++;
+                }
+            }
+
+            Console.WriteLine($"9. Chuỗi con '{sub}' có tồn tại không: {firstPos != -1}");
+            Console.WriteLine($"10. Vị trí xuất hiện đầu tiên của '{sub}': {firstPos}");
+            Console.WriteLine($"12. Số lần chuỗi con '{sub}' xuất hiện: {countSub}\n");
+
+            //  11. Kiểm tra 1 ký tự có phải chữ cái không & HOA/thường 
+            char ch = 'P';
+            if ((ch >= 'a' && ch <= 'z') || (ch >= 'A' && ch <= 'Z'))
+            {
+                string caseType = (ch >= 'A' && ch <= 'Z') ? "IN HOA" : "in thường";
+                Console.WriteLine($"11. Ký tự '{ch}' là chữ cái ({caseType})\n");
+            }
+            else
+            {
+                Console.WriteLine($"11. Ký tự '{ch}' không phải là chữ cái\n");
+            }
+
+            //  Chèn chuỗi con vào trước lần xuất hiện đầu tiên 
+            if (firstPos != -1)
+            {
+                string result = "";
+                for (int i = 0; i < firstPos; i++) result += str[i];
+                result += sub;
+                for (int i = firstPos; i < length; i++) result += str[i];
+
+                Console.WriteLine($"13. Chuỗi sau khi chèn '{sub}' vào trước: {result}\n");
+            }
 
         }
     }
